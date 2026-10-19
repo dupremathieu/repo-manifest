@@ -72,3 +72,19 @@ sudo apt install repo
 
 For other systems, the homepage of the project is at
 https://gerrit.googlesource.com/git-repo/
+
+== Pinned EC2 evaluation baseline
+
+The candidate `wrynose-ec2.xml` freezes all 14 project revisions to full Git
+commit IDs, including the BSP and the meta-seapath fork with the unused libvirt
+LXC driver disabled. The tag selects the manifest version; no project follows a
+moving branch. Full host_efi validation is still required for this candidate.
+
+[source,sh]
+----
+repo init -u https://github.com/dupremathieu/repo-manifest.git \
+  -b refs/tags/yocto-ec2-2026-10-19-v1 -m wrynose-ec2.xml
+repo sync
+----
+
+Create a new tag for a changed baseline; do not move this evaluation tag.
