@@ -83,8 +83,12 @@ moving branch. Full host_efi validation is still required for this candidate.
 [source,sh]
 ----
 repo init -u https://github.com/dupremathieu/repo-manifest.git \
-  -b refs/tags/yocto-ec2-2026-10-19-v1 -m wrynose-ec2.xml
+  -b refs/tags/yocto-ec2-2026-10-19-v2 -m wrynose-ec2.xml
 repo sync
 ----
 
 Create a new tag for a changed baseline; do not move this evaluation tag.
+
+The v2 evaluation omits python3-setup-ovs and its boot configuration service
+from host_efi, while retaining Open vSwitch. It evaluates compilation cost only.
+The v1 tag remains available and unchanged.

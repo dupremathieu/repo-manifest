@@ -1,12 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <manifest>
-  <!-- Candidate EC2 evaluation baseline, pinned on 2026-10-19. Full image validation pending. -->
   <remote name="yocto" fetch="https://git.yoctoproject.org" />
   <remote name="github" fetch="https://github.com/" />
   <remote name="seapath" fetch="https://github.com/seapath" />
   <remote name="oe" fetch="https://git.openembedded.org" />
   <remote name="personal" fetch="https://github.com/dupremathieu" />
-  <project name="yocto-bsp" revision="78bab5aa51bff52bd725fcda823041b279296e5b" remote="personal" path="." upstream="codex/yocto-ec2" />
+  <project name="yocto-bsp" revision="758f990759b5fce9d5837f32693ca6360094e0c8" remote="personal" path="." upstream="codex/yocto-ec2" />
   <project name="bitbake" revision="6e260eb6ab1631607ea414d9ff8ede1155faa5d9" remote="oe" path="sources/bitbake" upstream="2.18" />
   <project name="meta-yocto" revision="7c25b11156553145fa6b241a2d4f65d94438f804" remote="yocto" path="sources/meta-yocto" upstream="wrynose" />
   <project name="openembedded-core" revision="636e5d3b12d54951c13d57346648bc29a0e6b24e" remote="oe" path="sources/openembedded-core" upstream="wrynose" />
@@ -17,7 +16,7 @@
   <project remote="yocto" revision="2703974d5e2d61b221dffa302c2e059a522adbf3" name="meta-security" path="sources/meta-security" upstream="wrynose" />
   <project remote="yocto" revision="1c3a699f363167571ab39fecb0fe6f56691a4e20" name="meta-selinux" path="sources/meta-selinux" upstream="wrynose" />
   <project remote="yocto" revision="efbec7502e8027d350c05997678c12aa35662f0e" name="meta-cgl" path="sources/meta-cgl" />
-  <project name="meta-seapath" revision="c240d2fc440ffc0dfe9f529e7c844adc12d05342" remote="personal" path="sources/meta-seapath" upstream="codex/yocto-no-lxc" />
+  <project name="meta-seapath" revision="f49595375502b98e9736d27c77824367e81ca989" remote="personal" path="sources/meta-seapath" upstream="codex/yocto-no-lxc" />
   <project name="Wind-River/meta-secure-core" revision="07a99ae241acd488a2feda1ededf87dc70dfde80" remote="github" path="sources/meta-secure-core" upstream="wrynose" />
   <project name="sbabic/meta-swupdate" revision="80f749c6e0ca7462af3433a9198a06411c973bdf" remote="github" path="sources/meta-swupdate" upstream="wrynose" />
 </manifest>
